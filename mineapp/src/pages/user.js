@@ -15,7 +15,7 @@ export default class User extends React.Component {
 			<Switch>
 				<Route exact path='/user'><Index></Index></Route>
 				<Route path='/user/creat'><Creat></Creat></Route>
-				<Route path='/user/edit/:id'><Edit></Edit></Route>
+				<Route path='/user/edit/:id' component={Edit}></Route>
 			</Switch>
 		);
 	}

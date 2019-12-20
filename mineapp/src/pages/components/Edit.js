@@ -13,12 +13,14 @@ export default class Edit extends React.Component {
 			sex:'',
 		}
 		// console.log(props.match.params.id)
+		// const searchParams = new URLSearchParams(this.props.location.search.substring(1))
+		// console.log(searchParams.get("bar"))
 	}
 
 	componentDidMount(){
-		console.log(this.props.match.params)
+		console.log(this.props.match)
 		let {id} = this.props.match.params
-		axios.get(' http://127.0.0.1:8888/mock.php/user/get?id='+id)
+		axios.get('http://127.0.0.1:8888/mock.php/user/get?id='+id)
 		.then((response)=>{
 			this.setState(response.data)
 		}).catch((error)=>{
