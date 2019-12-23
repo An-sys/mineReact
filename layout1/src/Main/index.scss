@@ -1,0 +1,39 @@
+a{
+	text-decoration:none;
+}
+
+.clear{
+	&:after{
+		content: '';
+		display:table;
+		clear: both; 
+	}
+}
+
+.cover{
+	height:480px; 
+}
+
+.main{
+	padding:0 105px;
+	height: 100%;
+	box-sizing: border-box;
+	.main-nav{
+		height: 80px;
+		line-height: 80px;
+		font-size:20px;
+		.nav1-nav{
+			float: left;
+			margin: 0 5px;
+			color: #777;
+		}
+		.nav1-text{&:hover{color:black;}}
+	}
+	.main-content{
+		padding:20px;
+		box-sizing:border-box;
+		height: 400px;
+		background: #fff;
+		font-size: 50px;
+	}
+}

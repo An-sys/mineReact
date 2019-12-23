@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nav</title>
+	<link rel="stylesheet" href="./nav.css">
+</head>
+<body>
+	<div id="root">
+		<div id="nav1" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe607;</div>
+				<div class="nav-cont">会员开卡</div>
+			</div>
+		</div>
+
+		<div id="nav2" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe684;</div>
+				<div class="nav-cont">会员充值</div>
+			</div>
+		</div>
+		<div id="nav3" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe628;</div>
+				<div class="nav-cont">会员查询</div>
+			</div>
+		</div>
+		<div id="nav4" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe675;</div>
+				<div class="nav-cont">换卡补卡</div>
+			</div>
+		</div>
+		<div id="nav5" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe6a0;</div>
+				<div class="nav-cont">退卡销户</div>
+			</div>
+		</div>
+		<div id="nav6" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe64c;</div>
+				<div class="nav-cont">挂失启用</div>
+			</div>
+		</div>
+		<div id="nav7" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe650;</div>
+				<div class="nav-cont">营业明细</div>
+			</div>
+		</div>
+		<div id="nav8" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe664;</div>
+				<div class="nav-cont">发卡充值明细</div>
+			</div>
+		</div>
+		<div id="nav9" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe66a;</div>
+				<div class="nav-cont">品项销售明细</div>
+			</div>
+		</div>
+		<div id="nav10" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe67a;</div>
+				<div class="nav-cont">营业日结</div>
+			</div>
+		</div>
+		<div id="nav11" class="nav">
+			<div class="box">
+				<div class="nav-icon iconfont">&#xe688;</div>
+				<div class="nav-cont">退出登录</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		
+		let nav = document.getElementsByClassName('nav')
+		console.log(nav)
+
+		for(let i = 0; i < nav.length; i++){
+			
+			nav[i].onclick = function(){
+				
+				for(let j = 0; j < nav.length; j++ ){
+					nav[j].style.backgroundColor=''
+				}
+
+
+				this.style.backgroundColor='#75ace3'
+			}
+		}
+
+
+
+	</script>
+</body>
+</html>

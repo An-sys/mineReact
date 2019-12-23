@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout</title>
+	<link rel="stylesheet" href="./layout.css">
+</head>
+<body>
+	<div id="root">
+		<div id="right">
+			<div id="logo">
+				<div id="pic"></div>
+			</div>
+			<div id="nav">
+				<div id="user" class='cata'>
+					<div class="iconfont icon">&#xe60a;</div>
+					<div class='cont'>nav 1</div>
+				</div>
+				<div id="video" class='cata'>
+					<div class="iconfont icon">&#xe676;</div>
+					<div class='cont'>nav 2</div>
+				</div>
+				<div id="upload" class='cata'>
+					<div class="iconfont icon">&#xe67a;</div>
+					<div class='cont'>nav 3</div>
+				</div>
+			</div>
+		</div>
+		<div id="left">
+			<div id="top">
+				<div class="top-icon iconfont">&#xe63a;</div>
+			</div>
+			<div id="main">
+				<div class="main-cont">Content</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		let nav = document.getElementsByClassName('cata')
+		console.log(nav)
+
+		for(let i = 0; i < nav.length; i++){
+			
+			nav[i].onclick = function(){
+				
+				for(let j = 0; j < nav.length; j++ ){
+					nav[j].style.backgroundColor=''
+				}
+
+
+				this.style.backgroundColor='#75ace3'
+			}
+		}
+
+		
+	</script>
+</body>
+</html>
